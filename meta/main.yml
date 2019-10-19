@@ -1,9 +1,7 @@
 ---
 
 dependencies:
-  - src: https://github.com/nemesisdesign/Stouts.postfix
-    version: origin/develop
-    name: Stouts.postfix
+  - role: Stouts.postfix
     postfix_smtp_sasl_auth_enable: "{{ postfix_smtp_sasl_auth_enable_override | default(false) }}"
 
 galaxy_info:

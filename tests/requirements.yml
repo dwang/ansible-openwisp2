@@ -1,5 +1,3 @@
 ---
 
-- src: https://github.com/nemesisdesign/Stouts.postfix
-  version: origin/develop
-  name: Stouts.postfix
+- role: Stouts.postfix

@@ -186,11 +186,10 @@ First of all, create the directory where you want to place the repositories of t
     cd ~/openwisp-dev/roles
 ```
 
-Clone `ansible-openwisp2` and `Stouts.postfix` as follows:
+Clone `ansible-openwisp2` as follows:
 
 ```bash
     git clone https://github.com/openwisp/ansible-openwisp2.git openwisp.openwisp2
-    git clone https://github.com/nemesisdesign/Stouts.postfix
 ```
 
 Now, go to the parent directory & create hosts file and playbook.yml:
@@ -363,6 +362,7 @@ create an empty file named `playbook.yml` which contains the following:
 ```yaml
 - hosts: openwisp2
   roles:
+    - Stouts.postfix
     - openwisp.openwisp2
   # the following line is needed only when an IP address is used as the inventory hostname
   vars:
